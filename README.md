@@ -57,15 +57,16 @@ CIFAR-100 includes 100 fine-grained classes, grouped into 20 superclasses. Each 
   - Learning Rate has an impact on the outcome, please focus on this
 
 ## Evaluation and Results
-  - CNN From Scratch: 
-    - Test Loss: 2.4290168285369873
-    - Test Accuracy: 0.4009000062942505
-  - Pre-Existing/Feature Extraction:
-    - Test Loss: 1.667067050933838
-    - Test Accuracy: 0.5748000144958496
-  - Transfer Learning + Fine Tuning:
-    - Test Loss: 2.036684989929199
-    - Test Accuracy: 0.4781000018119812
+  | Type | Test Loss | Test Accuracy |
+  |------|-----------|---------------|
+  |CNN From Scratch|2.4290168285|0.4009000062|
+  |Feature Extraction-VGG16|1.6670670509|0.57480001449|
+  |Transfer Learning + Fine Tuning|2.036684989|0.4781000018|
+
+Philosophy:
+- There is a possibility to make CNN from Scratch work better than others, but this requires expertise and finesse. Dataset size also matters here. With small Datasets, it is difficult to achieve great results incase of CNNs.
+- With Pre-existing models, it is easy to converge quickly and with small Dataset you will achieve great results with minimal effort.
+- With Transfer Learning and Fine tuning you ll gain more control and achieve great results. Bit of efforts are needed to unfreeze and update the weights. A little experience is needed to work with Transfer learning and fine tuning.
 
 ## Observations
 - Tested the scenarios of changing the number of layers and perceptrons on the layer.
