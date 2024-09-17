@@ -58,8 +58,14 @@ CIFAR-100 includes 100 fine-grained classes, grouped into 20 superclasses. Each 
 
 ## Evaluation and Results
   - CNN From Scratch: 
-  - Pre-Existing:
-  - Transfer Learning+Fine Tuning:
+    - Test Loss: 2.4290168285369873
+    - Test Accuracy: 0.4009000062942505
+  - Pre-Existing/Feature Extraction:
+    - Test Loss: 1.667067050933838
+    - Test Accuracy: 0.5748000144958496
+  - Transfer Learning + Fine Tuning:
+    - Test Loss: 2.036684989929199
+    - Test Accuracy: 0.4781000018119812
 
 ## Observations
 - Tested the scenarios of changing the number of layers and perceptrons on the layer.
